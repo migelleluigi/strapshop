@@ -1,0 +1,347 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+p,
+.sub-font {
+  font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 2em;
+}
+
+
+
+
+#header{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 162px;
+}
+
+.text-center {
+  text-align: center;
+}
+.logo {
+  font-family: Arial;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #272727;
+  letter-spacing: 1px;
+  padding: 30px 0;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.nav__logo {
+  font-family: Arial;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #272727;
+  letter-spacing: 1px;
+  position: absolute;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -999px;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.nav__logo--show {
+  margin-left: 40px;
+}
+
+.nav__logo,
+.nav__list,
+.nav__list li {
+  margin-bottom: 0;
+}
+
+.nav__list {
+  margin: 0 auto;
+  display: inline-block;
+}
+.nav__list li {
+  display : inline-block;
+  margin-left: 1em;
+}
+
+.nav__list li a {
+  text-decoration: none;
+  color: #afafaf;
+  text-transform: uppercase;
+  padding: 0 25px;
+  margin: 15px 0;
+  display: block;
+  line-height: 2.25;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.home {
+  background: url('https://s-media-cache-ak0.pinimg.com/736x/b6/89/1d/b6891d1e230d5fe2c69b1b17ff814827.jpg');
+  /*background: url('http://www.sammobile.com/wp-content/uploads/2015/09/SAM_0283.jpg');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+
+
+.slider__content {
+  /*padding: 6em 6em 0;*/
+  width: 100%;
+  text-shadow: 0 0 1px #222;
+}
+h3,
+.slider__content h3 {
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 0;
+}
+
+.slider__content p {
+  font-size: 18px;
+  padding: 1em 13em;
+}
+.slider__content--center {
+  text-align: center;
+}
+.slider__button {
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0;
+  height: auto;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  border : 3px solid #fff;
+}
+
+.slider__button:hover {
+  background: #FFF;
+  color:#000;
+  border-color: #FFF;
+}
+
+.slider__button--dark {
+  color: #000;
+  font-size: 14px;
+  border-radius: 0;
+  height: auto;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  border : 3px solid #000;
+}
+
+.slider__button--dark:hover {
+  background: #000;
+  color:#FFF;
+  border-color: #000;
+}
+
+
+.home__featured {
+  margin: 100px auto;
+
+}
+
+.fixed {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  height: 60px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+
+.product {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.product__description {
+  padding: 5px 0;
+  margin-top: 1em;
+}
+.product__name {
+  margin : 0;
+  padding: 1em 0 0;
+  border-top: 1px solid #000;
+}
+
+.product__category {
+  text-transform: uppercase;
+  font-size: 12px;
+  color:#afafaf;
+}
+
+#footer {
+  width: 100%;
+  /*background: #f3f3f3;*/
+  background: #363636;
+  box-sizing: border-box;
+  color:#F1EDEB;
+}
+
+.main__footer {
+  padding: 50px 0;
+}
+
+
+.tel,.email,.address{
+  display: block;
+}
+
+
+/* Effect 5: same word slide in */
+.nav__list a {
+  overflow: hidden;
+  /*height: 1em;*/
+}
+
+.nav__list a span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.15s;
+  -moz-transition: -moz-transform 0.15s;
+  transition: transform 0.15s;
+}
+
+.nav__list a span::before {
+  position: absolute;
+  top: -100%;
+  content: attr(data-hover);
+  color:#1c1d21;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.nav__list a:hover span,
+.nav__list a:focus span {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+
+#map {
+  width: 100%;
+  height: 50vh;
+}
+.branch__list {
+  list-style-type: none;
+  max-height: calc(50vh - 50px);
+  overflow: auto;
+  padding-right: 10px;
+}
+.branch__title {
+  text-decoration: underline;
+  color: #000;
+  display: block;
+}
+.branch__address {
+  font-size: 12px;
+}
+.branch__list li {
+  border-bottom: 1px solid #afafaf;
+}
+
+
+.branch__search input:focus {
+  border: 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.7);
+}
+.branch__search input {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.6);
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0,0,0,0.4);
+}
+
+.logo a {
+  color: #000;
+  text-decoration: none;
+}
+
+.copyright {
+  widows: 100%;
+  text-align: center;
+  background: #222;
+  height: 60px;
+  line-height: 60px;
+}
+
+
+.home__about {
+  background: #15181b;
+  color:#F3F3F3;
+  padding: 120px;
+}
+
+.home__branch {
+  padding: 120px 0;
+}

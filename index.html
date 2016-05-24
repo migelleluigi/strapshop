@@ -13,6 +13,10 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -21,7 +25,125 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+
+          <header id="header">
+              <div class="logo text-center">
+                <a href="index.html"><span>STRAP SHOP</span></a>
+              </div>
+              <nav id="navigation" class="text-center">
+                <div class="nav__logo"><span>STRAP SHOP</span></div>
+                <ul class="nav__list">
+                  <li><a href=""><span data-hover="About">About</span></a></li>
+                  <li><a href=""><span data-hover="Products">Products</span></a></li>
+                  <li><a href=""><span data-hover="Branches">Branches</span></a></li>
+                  <li><a href=""><span data-hover="Franchise">Franchise</span></a></li>
+                  <li><a href=""><span data-hover="Careers">Careers</span></a></li>
+                  <li><a href=""><span data-hover="Contact Us">Contact Us</span></a></li>
+                </ul>
+              </nav>
+          </header>
+          <div class="home">
+            <div class="slider__content">
+              <div class="slider__content--center">
+                <h3 class="sub-font">Quality is our recipe</h3>
+                <!-- <p>We don’t cut corners on our products, service, or employees!</p> -->
+                <p>Strap Shop aims to provide the widest range of quality products and services in the country and to give the best chance of finding exactly what you need for your watch and your style.</p>
+                <button class="slider__button">View Products</button>
+              </div>
+            </div>
+          </div>
+          <main>
+            <section role="featured">
+              <div class="container home__featured">
+
+                    <h2 class="heading">WHAT'S HOT</h2>
+                    <div class="row">
+                      <div class="four columns">
+                        <div class="product">
+                          <img src="img/prod1.jpg" alt="">
+                          <div class="product__description text-left">
+                            <h6 class="heading product__name"> Old Style Vintage Oily</h5>
+                            <span class="heading product__category">Leather Strap</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="four columns">
+                        <div class="product">
+                          <img src="img/prod2.png" alt="">
+                          <div class="product__description text-left">
+                            <h6 class="heading product__name"> Old Style Vintage Oily</h5>
+                            <span class="heading product__category">Leather Strap</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="four columns">
+                        <div class="product">
+                          <img src="img/prod3.jpg" alt="">
+                          <div class="product__description text-left">
+                            <h6 class="heading product__name"> Old Style Vintage Oily</h5>
+                            <span class="heading product__category">Leather Strap</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+            </section>
+            <section role="about">
+              <div class="home__about  text-center">
+                <h4 class="heading">OUR STORY</h4>
+                <div class="container">
+                  <p>Opening its doors for the first time at ROBINSONS Forum in Pioneer Mandaluyong in September 2009 was the very first STRAPSHOP kiosk. Encourage by a very warm welcome from its customers, STRAPSHOP in ALIMALL Araneta Center Cubao soon followed, opened in March 2010. In continuous search for the best sites for our business, STRAPSHOP SM Sta.Mesa, was the next branch to open up. Along the way a lot of offers from different Malls came up.</p>
+                  <button class="slider__button">Read More</button>
+                </div>
+              </div>
+            </section>
+            <section role="branch">
+              <div class="container home__branch">
+                <div class="row">
+                  <div class="six columns">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.637434182306!2d121.05448031524575!3d14.619718280526346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7eaa7033e9d%3A0x4c2b052f0644e13a!2sAli+Mall!5e0!3m2!1sen!2sph!4v1464120523295" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                  <div class="six columns text-center">
+                    <h2 class="heading">BRANCH</h2>
+                    <p>To support our intended long-term growth, a central Head Office for direct procurement of our supplies has been built.</p>
+                    <!-- <p>
+                      STRAPSHOP New Alimall, Upper Ground Floor<br/>
+                      Times Street Baranggay Soccoro<br/>
+                      Araneta Center Quezon City
+                    </p> -->
+                    <button class="slider__button--dark">Find a Branch Near You</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+          <footer id="footer">
+              <div class="container main__footer">
+
+                <div class="row">
+                  <div class="four columns">
+                    <h5 class="heading">OFFICE</h5>
+                    Unit #28 – 3rd floor Cedar Building<br/>
+                    Pasay Road Arnaiz Brgy. San Lorenzo<br/>
+                    Makati City 1200 Philippines
+                  </div>
+                  <div class="four columns">
+                    <h5 class="heading">CONTACT</h5>
+                    strapshop@yahoo.com.ph<br/>
+                    0917-8913338 / 0917-5113337<br/>
+                    0917-8684365 / 0917-8684361
+                  </div>
+                  <div class="four columns">
+                    <h5 class="heading">JOIN US</h5>
+                    <button class="slider__button">Franchise Now</button>
+                  </div>
+                </div>
+
+              </div>
+              <div class="copyright">
+                COPYRIGHT &copy; 2016 STRAPSHOP.COM.PH
+              </div>
+          </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
